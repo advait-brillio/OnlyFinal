@@ -13,7 +13,7 @@ var credentials = {
   };
   var oauth2 = require('simple-oauth2').create(credentials);
   
-  var redirectUri = 'https://localhost:8282/authorize';
+  var redirectUri = 'https://oauthoutlook-1.azurewebsites.net/authorize';
   
   // The scopes the app requires
   var scopes = [ 'openid',
