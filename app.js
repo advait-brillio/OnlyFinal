@@ -1914,22 +1914,10 @@ function sendoptionCard(session, input, options) {
 
     while (input[i] != null) {
 
-
-
-        // var card = new builder.HeroCard(session)
-
-        //     .buttons([
-
-        //         builder.CardAction.postBack(session, input[i], options[i])
-
-
-
-        //     ])
-
         var msg = new builder.Message(session)
 
 
-
+            .text("Choose from any of the following.")
             .suggestedActions(
 
             builder.SuggestedActions.create(
