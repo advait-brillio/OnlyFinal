@@ -17,7 +17,7 @@ var bodyParser = require('body-parser')
 
 //--------------RESTIFY SERVER-----------------------------------------------------------------------------------------------------
 var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
+server.listen(process.env.port || process.env.PORT || 8282, function () {
     console.log('%s listening to %s', server.name, server.url);
 });
 
@@ -31,57 +31,11 @@ server.post('/api/messages', connector.listen());
 //-------------------------------------------------------------------------------------------------------------------
 
 
-
-// var handle = {};
-
-
-
-// handle['/'] = home;
-
-
-
-// handle['/authorize'] = authorize;
-
-
-
-// handle['/code'] = code;
-
-
-
-// handle['/mail;'] = mail;
-
-
-
-// start(router.route, handle);
-
-//GLOBALLY DECLARING ARRAYS WHICH CAN ALSO BE ACCESSED THROUGH BOTS
-
-
-
-// function start(route, handle) {
-
-//     function onRequest(request, response) {
-
-//       var pathName = url.parse(request.url).pathname;
-
-//       console.log('Request for ' + pathName + ' received.');
-
-//       route(handle, pathName, response, request);
-
-//     }
-
-
-
-//    }
-
 var cookies = []
 
 
 
 var emails = []
-
-
-
 
 
 //======================================================================================================================
